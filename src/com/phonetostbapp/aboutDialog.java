@@ -1,13 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.phonetostbapp;
-
 /**
  *
  * @author Achraf Gazdar
  */
+
+package com.phonetostbapp;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
