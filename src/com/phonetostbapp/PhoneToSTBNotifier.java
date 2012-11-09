@@ -33,7 +33,6 @@ public class PhoneToSTBNotifier extends Activity
     private final int ID_MENU_RUN = 4;
     public static final String EXIT_INTENT ="com.phonetostbapp.intent.action.EXIT";
     private Dialog settingsDialog;
-    private String settingsFileName = "phonetostb.cfg";
     private SharedPreferences mySettings;
     private FileOutputStream outSettings;
     private FileInputStream inSettings;
@@ -55,35 +54,6 @@ public class PhoneToSTBNotifier extends Activity
         //Reading our config file if it existes or create a dumm one
         try {
             //restore the settings if any
-            /*inSettings = openFileInput(settingsFileName);
-            BufferedReader inSettingsReader = new BufferedReader(new InputStreamReader(inSettings));
-            String line;
-            while((line=inSettingsReader.readLine())!= null){
-                String[] paramValue = line.split("=");
-                                                           
-                if(paramValue[0].equals("IP")) 
-                    if(this.ipAdress.equals(""))this.ipAdress+=paramValue[1];
-                if(paramValue[0].equals("NAME")) 
-                    if(this.name.equals("")) this.name+=paramValue[1];
-                if(paramValue[0].equals("PORT"))
-                    if(this.port.equals(""))this.port+=paramValue[1];
-                if(paramValue[0].equals("LOGIN"))
-                    if(this.login.equals(""))this.login+=paramValue[1];
-                if(paramValue[0].equals("PW"))
-                    if(this.pw.equals(""))this.pw+=paramValue[1];
-                if(paramValue[0].equals("IDDISPLAY"))
-                    if(paramValue[1].equals("yes"))
-                        this.displayCallerName=true;
-                    else
-                        this.displayCallerName=false;
-                if(paramValue[0].equals("OSTYPE"))
-                    if(paramValue[1].equals("e1"))
-                        this.isEnigmaOne=true;
-                    else
-                        this.isEnigmaOne=false;
-                                        
-            }
-            inSettings.close();*/
             SharedPreferences myPrefs = getSharedPreferences("myPrefs", 4);
             this.ipAdress+=myPrefs.getString("IP", "");
             this.name+=myPrefs.getString("NAME", "");
@@ -102,12 +72,9 @@ public class PhoneToSTBNotifier extends Activity
             
             
         } catch (Exception ex) {
-            try {
-                outSettings = openFileOutput(this.settingsFileName,Context.MODE_WORLD_READABLE);
-                outSettings.close();
-            } catch (Exception ex1) {
-                Logger.getLogger(PhoneToSTBNotifier.class.getName()).log(Level.SEVERE, null, ex1);
-            }
+            
+                Logger.getLogger(PhoneToSTBNotifier.class.getName()).log(Level.SEVERE, null, ex);
+           
         }
         
     }
@@ -268,53 +235,41 @@ public class PhoneToSTBNotifier extends Activity
                     
                     prefsEditor.clear();
                     
-                    outSettings = openFileOutput(settingsFileName,Context.MODE_WORLD_READABLE);
-                    
                     EditText nameText = (EditText)settingsDialog.findViewById(R.id.name);
-                    outSettings.write(("NAME="+nameText.getText().toString()+"\n").getBytes());
                     prefsEditor.putString("NAME", nameText.getText().toString());
                     name = nameText.getText().toString();
                     
                     EditText ipText = (EditText)settingsDialog.findViewById(R.id.ipadress);
-                    outSettings.write(("IP="+ipText.getText().toString()+"\n").getBytes());
                     prefsEditor.putString("IP", ipText.getText().toString());
                     ipAdress = ipText.getText().toString();
                    
                     EditText portText = (EditText)settingsDialog.findViewById(R.id.tcpport);
-                    outSettings.write(("PORT="+portText.getText().toString()+"\n").getBytes());
                     prefsEditor.putString("PORT", portText.getText().toString());
                     port = portText.getText().toString();
                    
                     EditText loginText = (EditText) settingsDialog.findViewById(R.id.textlogin);
-                    outSettings.write(("LOGIN="+loginText.getText().toString()+"\n").getBytes());
                     prefsEditor.putString("LOGIN", loginText.getText().toString());
                     login = loginText.getText().toString();
                     
                     EditText pwText = (EditText) settingsDialog.findViewById(R.id.pw);
-                    outSettings.write(("PW="+pwText.getText().toString()+"\n").getBytes());
                     prefsEditor.putString("PW", pwText.getText().toString());
                     pw = pwText.getText().toString();
                     
                     if (displayCallerName){
-                        outSettings.write(("IDDISPLAY=yes\n").getBytes());
                         prefsEditor.putString("IDDISPLAY", "yes");
                     }else{
-                        outSettings.write(("IDDISPLAY=no\n").getBytes());
                         prefsEditor.putString("IDDISPLAY", "no");
                     }
                     
                     if(isEnigmaOne){
-                        outSettings.write(("OSTYPE=e1\n").getBytes()); 
                         prefsEditor.putString("OSTYPE", "e1");
                     }else{
-                        outSettings.write(("OSTYPE=e2\n").getBytes()); 
                         prefsEditor.putString("OSTYPE", "e2");
                     }
                                         
                     prefsEditor.commit();
                     
                     mainMenu.getItem(1).setEnabled(true);
-                    outSettings.close();
                     settingsDialog.dismiss();  
     
                 } catch (Exception ex) {

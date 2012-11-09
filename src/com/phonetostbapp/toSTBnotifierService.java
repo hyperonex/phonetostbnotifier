@@ -111,34 +111,7 @@ public class toSTBnotifierService extends Service{
   
   public void notifyEntringCall(String incomingNumber){
         try {
-            /*inSettings = openFileInput(settingsFileName);
-            BufferedReader inSettingsReader = new BufferedReader(new InputStreamReader(inSettings));
-            String line;
-            while((line=inSettingsReader.readLine())!= null){
-                String[] paramValue = line.split("=");
-                if(paramValue[0].equals("NAME")) 
-                    if(this.name.equals(""))this.name+=paramValue[1];
-                if(paramValue[0].equals("IP")) 
-                    if(this.ipAdress.equals(""))this.ipAdress+=paramValue[1];
-                if(paramValue[0].equals("PORT"))
-                    if(this.port.equals(""))this.port+=paramValue[1];
-                if(paramValue[0].equals("LOGIN"))
-                    if(this.login.equals(""))this.login+=paramValue[1];
-                if(paramValue[0].equals("PW"))
-                    if(this.pw.equals(""))this.pw+=paramValue[1];
-                if(paramValue[0].equals("IDDISPLAY"))
-                    if(paramValue[1].equals("yes"))
-                        this.displayCallerName=true;
-                    else
-                        this.displayCallerName=false;
-               if(paramValue[0].equals("OSTYPE"))
-                    if(paramValue[1].equals("e1"))
-                        this.isEnigmaOne=true;
-                    else
-                        this.isEnigmaOne=false;
-                                        
-            }
-            inSettings.close();*/
+            
             SharedPreferences myPrefs = getSharedPreferences("myPrefs", 4);
             this.ipAdress=myPrefs.getString("IP", "");
             this.name=myPrefs.getString("NAME", "");
@@ -225,34 +198,7 @@ public class toSTBnotifierService extends Service{
       String incomingNumber = message.getOriginatingAddress();
       if(incomingNumber != null){
             try {
-                /*inSettings = openFileInput(settingsFileName);
-                BufferedReader inSettingsReader = new BufferedReader(new InputStreamReader(inSettings));
-                String line;
-                while((line=inSettingsReader.readLine())!= null){
-                    String[] paramValue = line.split("=");
-                    if(paramValue[0].equals("NAME")) 
-                        if(this.name.equals(""))this.name+=paramValue[1];
-                    if(paramValue[0].equals("IP")) 
-                        if(this.ipAdress.equals(""))this.ipAdress+=paramValue[1];
-                    if(paramValue[0].equals("PORT"))
-                        if(this.port.equals(""))this.port+=paramValue[1];
-                    if(paramValue[0].equals("LOGIN"))
-                        if(this.login.equals(""))this.login+=paramValue[1];
-                    if(paramValue[0].equals("PW"))
-                        if(this.pw.equals(""))this.pw+=paramValue[1];
-                    if(paramValue[0].equals("IDDISPLAY"))
-                        if(paramValue[1].equals("yes"))
-                            this.displayCallerName=true;
-                        else
-                            this.displayCallerName=false;
-                 if(paramValue[0].equals("OSTYPE"))
-                    if(paramValue[1].equals("e1"))
-                        this.isEnigmaOne=true;
-                    else
-                        this.isEnigmaOne=false;
-                                        
-            }
-            inSettings.close();*/
+                
             SharedPreferences myPrefs = getSharedPreferences("myPrefs", 4);
             this.ipAdress=myPrefs.getString("IP", "");
             this.name=myPrefs.getString("NAME", "");
