@@ -1,0 +1,41 @@
+<receiver
+        android:name=".IncomingSMSReceiver">
+        <intent-filter>
+            <action
+            android:name="android.provider.Telephony.SMS_RECEIVED">
+            </action>
+        </intent-filter>
+        </receiver>
+ 
+ <TextView 
+    android:id="@+id/TextView02"
+    android:layout_below="@id/port"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/loginText"
+ />
+ 
+ <EditText
+    android:id="@+id/login"
+    android:layout_below="@id/TextView02"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+ />
+ 
+ <TextView 
+    android:id="@+id/TextView03"
+    android:layout_below="@id/login"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="@string/pwText"
+ />
+ 
+ <EditText
+    android:id="@+id/pw"
+    android:layout_below="@id/TextView03"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+ />
+ 

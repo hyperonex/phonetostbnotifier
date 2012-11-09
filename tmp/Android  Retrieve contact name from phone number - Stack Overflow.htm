@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Android: Retrieve contact name from phone number - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+
+    
+    <script type="text/javascript" async="" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44"></script><script type="text/javascript" async="" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/ga.js"></script><script type="text/javascript" async="" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/quant.js"></script><script type="text/javascript" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Android  Retrieve contact name from phone number - Stack Overflow_files/all.css">
+    
+    <meta name="relativepagescore" content="190014">
+    <link rel="canonical" href="./Android  Retrieve contact name from phone number - Stack Overflow_files/Android  Retrieve contact name from phone number - Stack Overflow.htm">
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Android: Retrieve contact name from phone number&#39;" href="http://stackoverflow.com/feeds/question/3079365">
+    <script type="text/javascript">
+        
+        StackExchange.ready(function () {
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:3079365});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '3079365');
+            
+                
+        });
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1346455760,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q\u0026A for professional and enthusiast programmers","isNoticesTabEnabled":true,"enableSocialMediaInSharePopup":true},"user":{"isAnonymous":true,"fkey":"a291ca2d9dc71a3c0f3315410d5c3756","notificationsUnviewedCount":0,"inboxUnviewedCount":-1}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"d1cd9a23171c","js/moderator.js":"c055b6d653e8","js/full-anon.js":"34b439ed78cd","js/full.js":"dee5c4805395","js/wmd.js":"93b92575f8bc","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"fc9fb0517db2","js/tageditor.js":"c1ba807b32aa","js/tageditornew.js":"bd66fabe1c71","js/inline-tag-editing.js":"be882e188985","js/revisions.js":"8c6bcd93b7fe","js/probes.js":"beb933322ff0","js/review.js":"918218bd748d"});
+        
+    </script>
+<script async="" type="text/javascript" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/full-anon.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/change_sink.js"></script><script async="" type="text/javascript" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/prettify-full.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js"><meta name="change_sink.js"><link href="./Android  Retrieve contact name from phone number - Stack Overflow_files/sidebar.min.css" type="text/css" rel="stylesheet"></head>
+<body class="question-page">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header">
+            <div id="portalLink">
+                <a class="genu" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+
+
+
+
+
+
+
+
+
+<span id="hlinks-user">
+
+</span>
+<span id="hlinks-nav">
+                   <a href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f3079365%2fandroid-retrieve-contact-name-from-phone-number">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com/">careers</a>
+
+ <span class="lsep">|</span>
+
+</span>
+<span id="hlinks-custom">
+        <a href="http://chat.stackoverflow.com/">chat</a>
+
+ <span class="lsep">|</span>
+            <a href="http://meta.stackoverflow.com/">meta</a>
+
+ <span class="lsep">|</span>
+        <a href="http://stackoverflow.com/about">about</a>
+
+ <span class="lsep">|</span>
+    <a href="http://stackoverflow.com/faq">faq</a>
+
+</span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <div>
+                        <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="140" size="28" value="">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">Stack Overflow</a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Article">
+<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+<div id="question-header">
+    <h1 itemprop="name"><a href="./Android  Retrieve contact name from phone number - Stack Overflow_files/Android  Retrieve contact name from phone number - Stack Overflow.htm" class="question-hyperlink">Android: Retrieve contact name from phone number</a></h1>
+</div>
+<div id="mainbar">
+
+
+
+<div class="question" id="question" data-questionid="3079365">
+    
+    <div class="everyonelovesstackoverflow" id="adzerk1"><a href="http://engine.adzerk.net/redirect/0/10769/2444/8277/67047ef630b345b7835fd622e6591c3f/43/1178/16886/634820525610170450/?keywords=android%2ccontacts%2ccontactscontract%2ctelephone" rel="nofollow" target="_blank" title=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/d893babe671c41118c1fece177e0a21a.jpg" title="" alt="" border="0" height="90" width="728"></a><img width="0" height="0" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/v.gif"></div>
+
+    
+    <table>
+    <tbody><tr>
+    <td class="votecell">
+        
+
+<div class="vote">
+    <input type="hidden" value="3079365">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear (click again to undo)">up vote</a>
+    <span class="vote-count-post">3</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful (click again to undo)">down vote</a>
+    <a class="star-off" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>4</b></div>   
+ 
+</div>
+
+    </td>
+    
+<td class="postcell">
+<div>          
+    <div class="post-text" itemprop="description">
+        <p>I would like to retrieve the name of a contact associated with an incoming telephone number. As I process the incoming number in the broascastreceiver having a String with the name of the incoming caller would help my project greatly.</p>
+
+<p>I would think this involves a query using the sql WHERE clause as a filter, but do I need to sort the contacts? An example or hint would be of great assistance.</p>
+
+    </div>            
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/android" class="post-tag" title="show questions tagged &#39;android&#39;" rel="tag"><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/tKsDb.png" height="16" width="18" alt="" class="sponsor-tag-img">android</a> <a href="http://stackoverflow.com/questions/tagged/contacts" class="post-tag" title="show questions tagged &#39;contacts&#39;" rel="tag">contacts</a> <a href="http://stackoverflow.com/questions/tagged/contactscontract" class="post-tag" title="show questions tagged &#39;contactscontract&#39;" rel="tag">contactscontract</a> <a href="http://stackoverflow.com/questions/tagged/telephone" class="post-tag" title="show questions tagged &#39;telephone&#39;" rel="tag">telephone</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+        <div class="post-menu"><a href="http://stackoverflow.com/q/3079365" title="short permalink to this question" class="short-link" id="link-post-3079365">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/3079365/edit">improve this question</a></div>
+    </td>
+    <td align="right" class="post-signature">
+
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                            edited
+                             <a href="http://stackoverflow.com/posts/3079365/revisions" title="show all edits to this post"><span title="2012-02-09 07:51:40Z" class="relativetime">Feb 9 at 7:51</span></a>
+
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/1041245/poornima-prakash"><div class=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/0d38ec88caff48d516a607f36d4bc57a" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/1041245/poornima-prakash">Poornima Prakash</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">25</span><span title="6 bronze badges"><span class="badge3"></span><span class="badgecount">6</span></span>
+        </div>
+    </div>
+    </td>
+    <td class="post-signature owner">
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    asked
+ <span title="2010-06-20 13:23:37Z" class="relativetime">Jun 20 '10 at 13:23</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/371532/noah-seidman"><div class=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/0fb32b76f83b97fb71a59363785944ed" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/371532/noah-seidman">Noah Seidman</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">287</span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="16 bronze badges"><span class="badge3"></span><span class="badgecount">16</span></span>
+        </div>
+    </div>
+
+        <br class="cbt">
+        <div class="accept-rate accept-answer-link" title="this user has accepted an answer for 14 of 16 eligible questions">88% accept rate</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>    </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-3079365" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+    
+    <div class="was-this-helpful" style="color: rgb(136, 136, 136); ">
+        feedback
+    </div>
+    
+</td>
+</tr>            </tbody></table>    
+</div>
+
+
+<div id="answers">
+
+    <a name="tab-top"></a>
+    <div id="answers-header">
+        <div class="subheader answers-subheader">
+            <h2>2 Answers</h2>
+            <div id="tabs">
+                <a href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+<a href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+<a class="youarehere" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+
+            </div>
+        </div>    
+    </div>    
+
+
+
+
+
+  
+    <a name="3079443"></a>
+    <div id="answer-3079443" class="answer accepted-answer" data-answerid="3079443">
+        <table>
+        <tbody><tr>
+        <td class="votecell">
+            
+
+<div class="vote">
+    <input type="hidden" value="3079443">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post">13</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+            <span class="vote-accepted-on" title="The question owner accepted this as the best answer Jun 20 &#39;10 at 15:32">accepted</span>
+ 
+</div>
+
+        </td>
+        
+
+
+<td class="answercell">
+    <div class="post-text"><p>For that you need to use the optimized PhoneLookup provider as described <a href="http://developer.android.com/intl/de/reference/android/provider/ContactsContract.PhoneLookup.html" rel="nofollow">here</a></p>
+
+<pre class="default prettyprint"><code><span class="typ">Uri</span><span class="pln"> uri </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Uri</span><span class="pun">.</span><span class="pln">withAppendedPath</span><span class="pun">(</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">CONTENT_FILTER_URI</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Uri</span><span class="pun">.</span><span class="pln">encode</span><span class="pun">(</span><span class="pln">phoneNumber</span><span class="pun">));</span><span class="pln"><br>&nbsp;resolver</span><span class="pun">.</span><span class="pln">query</span><span class="pun">(</span><span class="pln">uri</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">String</span><span class="pun">[]{</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">DISPLAY_NAME</span><span class="pun">}</span><span class="pln"> </span><span class="pun">.....)</span><span class="pln"><br></span></code></pre>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/3079443" title="short permalink to this answer" class="short-link" id="link-post-3079443">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/3079443/edit">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+ <span title="2010-06-20 13:47:26Z" class="relativetime">Jun 20 '10 at 13:47</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/243782/pentium10"><div class=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/4a682874e7a4757dc02a9823e277e235" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/243782/pentium10">Pentium10</a><br>
+            <span class="reputation-score" title="reputation score 37829" dir="ltr">37.8k</span><span title="19 gold badges"><span class="badge1"></span><span class="badgecount">19</span></span><span title="123 silver badges"><span class="badge2"></span><span class="badgecount">123</span></span><span title="225 bronze badges"><span class="badge3"></span><span class="badgecount">225</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-3079443" class="comments">
+        <table>
+        <tbody>
+                    
+    <tr id="comment-3155697" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">Right off the dev page, thank you for the quick response. The toString() method in Uri should convert this query to the contacts name?</span> –&nbsp;<a href="http://stackoverflow.com/users/371532/noah-seidman" title="287 reputation" class="comment-user owner">Noah Seidman</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(3155697, 3079443)" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#comment3155697_3079443"><span title="2010-06-20 13:54:09Z">Jun 20 '10 at 13:54</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-3155966" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">No, it won't you will have to resolve the Cursor yourself. For some help check this questions: <a href="http://stackoverflow.com/questions/903343/cursor-get-the-field-value-android" title="cursor get the field value android">stackoverflow.com/questions/903343/…</a></span> –&nbsp;<a href="http://stackoverflow.com/users/243782/pentium10" title="37829 reputation" class="comment-user">Pentium10</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(3155966, 3079443)" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#comment3155966_3079443"><span title="2010-06-20 15:02:31Z">Jun 20 '10 at 15:02</span></a></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+            
+    <tr id="comment-3156041" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">I would initialize a cursor with a managedQuery using the URI, then move the cursor to the fist position and get the data? Once I get the cursor at the first position I use getString? I assume that the first position would be right because the query is for a number therefore the query will pull up names only for that number?</span> –&nbsp;<a href="http://stackoverflow.com/users/371532/noah-seidman" title="287 reputation" class="comment-user owner">Noah Seidman</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(3156041, 3079443)" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#comment3156041_3079443"><span title="2010-06-20 15:22:39Z">Jun 20 '10 at 15:22</span></a></span><span class="edited-yes" title="this comment was edited"></span></div></td>
+    </tr>
+            
+    <tr id="comment-3156067" class="comment">
+        <td></td>
+        <td class="comment-text"><div><span class="comment-copy">That's exactly how you have to do. Don't forget to wrap in a try/catch.</span> –&nbsp;<a href="http://stackoverflow.com/users/243782/pentium10" title="37829 reputation" class="comment-user">Pentium10</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(3156067, 3079443)" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#comment3156067_3079443"><span title="2010-06-20 15:30:11Z">Jun 20 '10 at 15:30</span></a></span></div></td>
+    </tr>
+            
+    <tr id="comment-6061935" class="comment">
+        <td class="comment-actions"><table><tbody><tr>
+<td class="comment-score">
+<span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+</td>
+<td>
+&nbsp;
+</td></tr>
+</tbody></table></td>
+        <td class="comment-text"><div><span class="comment-copy">What specifically goes into the rest of that query? This answer isn't much more helpful than the already existing documentation.</span> –&nbsp;<a href="http://stackoverflow.com/users/344688/eternalmatt" title="726 reputation" class="comment-user">eternalmatt</a> <span class="comment-date" dir="ltr"><a class="comment-link" onclick="StackExchange.question.highlightComment(6061935, 3079443)" href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#comment6061935_3079443"><span title="2011-03-19 21:23:48Z">Mar 19 '11 at 21:23</span></a></span></div></td>
+    </tr>
+
+        </tbody>
+    
+        </table>
+    </div>
+    
+    
+    <div class="was-this-helpful" style="color: rgb(136, 136, 136); ">
+        feedback
+    </div>
+    
+</td>
+</tr>            </tbody></table>
+</div>
+
+    <div class="everyonelovesstackoverflow" id="adzerk3"><a href="http://engine.adzerk.net/redirect/0/2565/2444/8277/98edf8995fa248b182b79dab9bb82588/44/1178/4215/634820525610241080/?keywords=android%2ccontacts%2ccontactscontract%2ctelephone" rel="nofollow" target="_blank" title=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/2565.png" title="" alt="" border="0" height="90" width="728"></a><img width="0" height="0" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/v(1).gif"></div>
+
+    
+
+  
+    <a name="8695649"></a>
+    <div id="answer-8695649" class="answer" data-answerid="8695649">
+        <table>
+        <tbody><tr>
+        <td class="votecell">
+            
+
+<div class="vote">
+    <input type="hidden" value="8695649">
+    <a class="vote-up-off" title="This answer is useful (click again to undo)">up vote</a>
+    <span class="vote-count-post">4</span>
+    <a class="vote-down-off" title="This answer is not useful (click again to undo)">down vote</a>
+ 
+</div>
+
+        </td>
+        
+
+
+<td class="answercell">
+    <div class="post-text"><p>This was very helpful, here's my final code for retrieving the caller's Name, id, and Photo:</p>
+
+<pre class="default prettyprint"><code><span class="kwd">private</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> uploadContactPhoto</span><span class="pun">(</span><span class="typ">Context</span><span class="pln"> context</span><span class="pun">,</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> number</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br><br></span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto..."</span><span class="pun">);</span><span class="pln"><br><br></span><span class="typ">String</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br></span><span class="typ">String</span><span class="pln"> contactId </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br></span><span class="typ">InputStream</span><span class="pln"> input </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln"><br><br></span><span class="com">// define the columns I want the query to return</span><span class="pln"><br></span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> projection </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">DISPLAY_NAME</span><span class="pun">,</span><span class="pln"><br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">_ID</span><span class="pun">};</span><span class="pln"><br><br></span><span class="com">// encode the phone number and build the filter URI</span><span class="pln"><br></span><span class="typ">Uri</span><span class="pln"> contactUri </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Uri</span><span class="pun">.</span><span class="pln">withAppendedPath</span><span class="pun">(</span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">CONTENT_FILTER_URI</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Uri</span><span class="pun">.</span><span class="pln">encode</span><span class="pun">(</span><span class="pln">number</span><span class="pun">));</span><span class="pln"><br><br></span><span class="com">// query time</span><span class="pln"><br></span><span class="typ">Cursor</span><span class="pln"> cursor </span><span class="pun">=</span><span class="pln"> context</span><span class="pun">.</span><span class="pln">getContentResolver</span><span class="pun">().</span><span class="pln">query</span><span class="pun">(</span><span class="pln">contactUri</span><span class="pun">,</span><span class="pln"> projection</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">);</span><span class="pln"><br><br></span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">cursor</span><span class="pun">.</span><span class="pln">moveToFirst</span><span class="pun">())</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">// Get values from contacts database:</span><span class="pln"><br>&nbsp; &nbsp; contactId </span><span class="pun">=</span><span class="pln"> cursor</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="pln">cursor</span><span class="pun">.</span><span class="pln">getColumnIndex</span><span class="pun">(</span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">_ID</span><span class="pun">));</span><span class="pln"><br>&nbsp; &nbsp; name </span><span class="pun">=</span><span class="pln"> &nbsp; &nbsp; &nbsp;cursor</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="pln">cursor</span><span class="pun">.</span><span class="pln">getColumnIndex</span><span class="pun">(</span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">PhoneLookup</span><span class="pun">.</span><span class="pln">DISPLAY_NAME</span><span class="pun">));</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="com">// Get photo of contactId as input stream:</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="typ">Uri</span><span class="pln"> uri </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ContentUris</span><span class="pun">.</span><span class="pln">withAppendedId</span><span class="pun">(</span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">Contacts</span><span class="pun">.</span><span class="pln">CONTENT_URI</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Long</span><span class="pun">.</span><span class="pln">parseLong</span><span class="pun">(</span><span class="pln">contactId</span><span class="pun">));</span><span class="pln"><br>&nbsp; &nbsp; input </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ContactsContract</span><span class="pun">.</span><span class="typ">Contacts</span><span class="pun">.</span><span class="pln">openContactPhotoInputStream</span><span class="pun">(</span><span class="pln">context</span><span class="pun">.</span><span class="pln">getContentResolver</span><span class="pun">(),</span><span class="pln"> uri</span><span class="pun">);</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto: Contact Found @ "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> number</span><span class="pun">);</span><span class="pln"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; </span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto: Contact name &nbsp;= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> name</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto: Contact id &nbsp; &nbsp;= "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> contactId</span><span class="pun">);</span><span class="pln"><br><br></span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br><br>&nbsp; &nbsp; </span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto: Contact Not Found @ "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> number</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">return</span><span class="pun">;</span><span class="pln"> </span><span class="com">// contact not found</span><span class="pln"><br><br></span><span class="pun">}</span><span class="pln"><br><br></span><span class="com">// Only continue if we found a valid contact photo:</span><span class="pln"><br></span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">input </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto: No photo found, id = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> contactId </span><span class="pun">+</span><span class="pln"> </span><span class="str">" name = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> name</span><span class="pun">);</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">return</span><span class="pun">;</span><span class="pln"> </span><span class="com">// no photo</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">type </span><span class="pun">=</span><span class="pln"> contactId</span><span class="pun">;</span><span class="pln"><br>&nbsp; &nbsp; </span><span class="typ">Log</span><span class="pun">.</span><span class="pln">v</span><span class="pun">(</span><span class="str">"ffnet"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Started uploadcontactphoto: Photo found, id = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> contactId </span><span class="pun">+</span><span class="pln"> </span><span class="str">" name = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> name</span><span class="pun">);</span><span class="pln"><br></span><span class="pun">}</span><span class="pln"><br></span></code></pre>
+
+<p>... then just do whatever you want with "input" (their photo as an InputStream), "name", and "contactId".</p>
+
+<p>And here are the docs listing the ~15 or so columns you have access to, just add them to the projection near the start of the code up above:
+        <a href="http://developer.android.com/reference/android/provider/ContactsContract.PhoneLookup.html" rel="nofollow">http://developer.android.com/reference/android/provider/ContactsContract.PhoneLookup.html</a></p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/8695649" title="short permalink to this answer" class="short-link" id="link-post-8695649">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/8695649/edit">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+
+    <div class="user-info ">
+        <div class="user-action-time">
+                                    answered
+ <span title="2012-01-01 21:24:10Z" class="relativetime">Jan 1 at 21:24</span>
+        </div>
+        <div class="user-gravatar32">
+            <a href="http://stackoverflow.com/users/383409/mdaddy"><div class=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/f0f36ff6fe5965f89f71e98c9655f114" alt="" width="32" height="32"></div></a>
+        </div>
+        <div class="user-details">
+            <a href="http://stackoverflow.com/users/383409/mdaddy">mdaddy</a><br>
+            <span class="reputation-score" title="reputation score" dir="ltr">201</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="5 bronze badges"><span class="badge3"></span><span class="badgecount">5</span></span>
+        </div>
+    </div>
+
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+
+<tr>
+<td class="votecell"></td>
+<td>
+    <div id="comments-8695649" class="comments dno">
+        <table>
+        <tbody>
+        
+            <tr><td></td><td></td></tr>
+        
+        </tbody>
+    
+        </table>
+    </div>
+    
+    
+    <div class="was-this-helpful" style="color: rgb(0, 0, 0); ">Was this post useful to you? &nbsp;&nbsp;<input style="" class="anon-vote" type="button" value="Yes"> &nbsp;<input style="" class="anon-vote" type="button" value="No"></div>
+    
+</td>
+</tr>            </tbody></table>
+</div>
+    <a name="new-answer"></a>
+    <form id="post-form" action="http://stackoverflow.com/questions/3079365/answer/submit" method="post" class="post-form">
+        <h2 class="space">Your Answer</h2>
+
+
+
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'answer',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: true,
+            discardSelector: ".discard-answer"
+            ,immediatelyShowMarkdownHelp:true
+        });
+        
+
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">  
+
+    
+    <div class="wmd-container">
+        <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px; "><span style="background-position: 0px -20px; "></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px; "><span style="background-position: -20px -20px; "></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px; "><span style="background-position: -40px -20px; "></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px; "><span style="background-position: -40px -20px; "></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px; "><span style="background-position: -60px -20px; "></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px; "><span style="background-position: -80px -20px; "></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px; "><span style="background-position: -100px -20px; "></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px; "><span style="background-position: -120px -20px; "></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px; "><span style="background-position: -120px -20px; "></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px; "><span style="background-position: -140px -20px; "></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px; "><span style="background-position: -160px -20px; "></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px; "><span style="background-position: -180px -20px; "></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px; "><span style="background-position: -200px -20px; "></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px; "><span style="background-position: -200px -20px; "></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px; "><span style="background-position: -220px -20px; "></span></li></ul></div>
+        <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101"></textarea>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="a291ca2d9dc71a3c0f3315410d5c3756">
+        <input id="author" name="author" type="text">
+    </div>
+</div>            <div class="form-item">
+        <table>
+        <tbody><tr>
+            <td class="vm open-id-login">
+                <a id="login-link" style="font-size: 200%; margin-left: 30px;" href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f3079365%2fandroid-retrieve-contact-name-from-phone-number">log in</a>
+                <script type="text/javascript">
+                    StackExchange.ready(function () {
+                        StackExchange.helpers.onClickDraftSave('#login-link');
+                    });
+                </script>
+            </td>
+            <td class="orcell">
+                <div class="orword">or</div>
+                <div class="orline"></div>
+            </td>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="40" maxlength="100" value="" tabindex="106">
+                    <span class="edit-field-overlay">required, but never shown</span>
+                </div>
+                <div>
+                    <label for="home-page">Home Page</label>
+                    <input id="home-page" name="home-page" type="text" size="40" maxlength="200" value="" tabindex="107">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+           
+            <div class="form-submit cbt">
+            <input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+            <a href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number#" class="discard-answer dno">discard</a>
+    <p class="privacy-policy-agreement">
+        By posting your answer, you agree to the 
+        <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and 
+        <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.
+    </p>
+        </div>
+    </form>
+
+
+
+        <h2 class="bottom-notice">
+                Not the answer you're looking for? 
+            Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/android" class="post-tag" title="show questions tagged &#39;android&#39;" rel="tag"><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/tKsDb.png" height="16" width="18" alt="" class="sponsor-tag-img">android</a> <a href="http://stackoverflow.com/questions/tagged/contacts" class="post-tag" title="show questions tagged &#39;contacts&#39;" rel="tag">contacts</a> <a href="http://stackoverflow.com/questions/tagged/contactscontract" class="post-tag" title="show questions tagged &#39;contactscontract&#39;" rel="tag">contactscontract</a> <a href="http://stackoverflow.com/questions/tagged/telephone" class="post-tag" title="show questions tagged &#39;telephone&#39;" rel="tag">telephone</a> 
+                or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.
+        </h2>
+</div>
+</div>
+<div id="sidebar">
+
+
+
+     <script type="text/javascript">
+        window.showNewUser = true;
+
+            
+                (function(){
+                    var cs = window.sessionStorage && window.sessionStorage['tNewsletter'];
+                    var m = /:\/\/([^\/]*)/.exec(document.referrer);
+                    var h = {'www.reddit.com':1,'news.ycombinator.com':1};
+                    if(window.sessionStorage && (cs || (m && m.length == 2 && h[m[1]]))){
+                        showNewUser = false;
+                        StackExchange.ready(function(){
+                            StackExchange.newsletterAd.loader(m[1], cs);
+                        });
+                    }
+                    if (window.localStorage && showNewUser){
+                        var c = parseInt(localStorage['nuCounter'],10); 
+                        c = isNaN(c) ? 1 : c+1;
+                        window.localStorage['nuCounter'] = c; 
+                        showNewUser = c < 10;
+                    }
+                })()
+            
+     </script>
+    <div class="module newuser newuser-greeting" id="newuser-box" style="display:none;">
+        <h4>Hello World!</h4>
+        <div>
+            <p>This is a collaboratively edited question and answer site for <b>professional and enthusiast programmers</b>. It's 100% free, no registration required.</p>
+            <p class="ar"><a href="http://stackoverflow.com/about?mnu=1">about »</a>&nbsp;&nbsp;&nbsp;<a href="http://stackoverflow.com/faq?mnu=1">faq »</a>
+            </p>
+        </div>
+    </div>
+     <script type="text/javascript">
+        if (showNewUser) {
+            document.getElementById('newuser-box').style.display = '';
+        }
+     </script>
+        <div class="module question-stats">
+        <p class="label-key">tagged</p>
+        <div class="tagged"><a href="http://stackoverflow.com/questions/tagged/android" class="post-tag" title="show questions tagged &#39;android&#39;" rel="tag"><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/tKsDb.png" height="16" width="18" alt="" class="sponsor-tag-img">android</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">222826</span></span><br>
+<a href="http://stackoverflow.com/questions/tagged/contacts" class="post-tag" title="show questions tagged &#39;contacts&#39;" rel="tag">contacts</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">996</span></span><br>
+<a href="http://stackoverflow.com/questions/tagged/contactscontract" class="post-tag" title="show questions tagged &#39;contactscontract&#39;" rel="tag">contactscontract</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">205</span></span><br>
+<a href="http://stackoverflow.com/questions/tagged/telephone" class="post-tag" title="show questions tagged &#39;telephone&#39;" rel="tag">telephone</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">42</span></span><br>
+</div>
+        <table id="qinfo">
+            <tbody><tr>
+                <td><p class="label-key">asked</p></td>
+                <td style="padding-left:10px"><p class="label-key" title="2010-06-20 13:23:37Z"><b>2 years ago</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="label-key">viewed</p></td>
+
+                <td style="padding-left:10px"><p class="label-key"><b>5,623 times</b></p></td>
+            </tr>
+            <tr>
+                <td><p class="label-key">active</p></td>
+                <td style="padding-left:10px"><p class="label-key"><b><a href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number?lastactivity" class="lastactivity-link" title="2012-02-09 07:51:40Z">6 months ago</a></b></p></td>
+            </tr>
+        </tbody></table>
+    </div>
+        
+    
+        <script type="text/javascript">
+            var scriptSrc = "http://engine2.adzerk.net/z/8277/adzerk1_2_4_43,adzerk2_2_17_45,adzerk3_2_4_44?keywords=android,contacts,contactscontract,telephone";
+            if (document.referrer) {
+                if (/\?/.test(scriptSrc))
+                    scriptSrc += "&";
+                else
+                    scriptSrc += "?";
+                scriptSrc += "xReferrer=" + document.referrer;
+            }
+            StackExchange.ready(function(){var z = document.createElement("script"); z.type = "text/javascript"; z.async = "true"; z.src = scriptSrc; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);});
+        </script>
+    
+    <div class="everyonelovesstackoverflow" id="adzerk2"><a href="http://engine.adzerk.net/redirect/0/8211/2444/8277/0d07ea19948047d3aeb7b31b4088cfac/45/1178/13039/634820525610205300/?keywords=android%2ccontacts%2ccontactscontract%2ctelephone" rel="nofollow" target="_blank" title=""><img src="./Android  Retrieve contact name from phone number - Stack Overflow_files/bd294ce7ff4c43b6aad4aa4169fb819b.jpg" title="" alt="" border="0" height="250" width="220"></a><img width="0" height="0" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/v(2).gif"></div>
+
+    
+    <div id="hireme"> <a href="http://careers.stackoverflow.com/jobs?a=12" class="top" target="_blank"></a> <ul class="jobs"> <li> <a href="http://careers.stackoverflow.com/jobs/23526/systems-administrator-ii-college-mainland?a=rNkJ3vW" target="_blank" title="Systems Administrator II at College of the Mainland. Click to learn more."> Systems Administrator II<br> <span class="company">College of the Mainland</span> <span class="location">Texas City, TX</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/23559/integration-consultant-murex-north-america?a=rPKBgc0" target="_blank" title="Integration Consultant at Murex North America. Click to learn more."> Integration Consultant<br> <span class="company">Murex North America</span> <span class="location">New York, NY</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/22883/technical-program-manager-productive-edge?a=r2erRkc" target="_blank" title="Technical Program Manager at Productive Edge. Click to learn more."> Technical Program Manager<br> <span class="company">Productive Edge</span> <span class="location">Chicago, IL</span> </a> </li> </ul> <img alt="" class="impression" src="./Android  Retrieve contact name from phone number - Stack Overflow_files/rNkJ3vW-rPKBgc0-r2erRkc-12" style="display:none"></div>
+
+      
+    
+    <div class="module sidebar-linked">
+        <h4 id="h-linked">Linked</h4>
+        <div class="linked" data-tracker="lq=1">
+            <div class="spacer">
+<a href="http://stackoverflow.com/questions/903343/cursor-get-the-field-value-android?lq=1" class="question-hyperlink">Cursor : get the field value (Android)</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/2174048/how-to-look-up-a-contacts-name-from-their-phone-number-on-android?lq=1" class="question-hyperlink">How to look-up a contact's name from their phone number on Android?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3206276/how-can-i-query-android-contact-based-on-a-phone-number?lq=1" class="question-hyperlink">How can I query Android contact based on a phone number?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/10083801/androidgetting-photo-of-contact-from-its-number?lq=1" class="question-hyperlink">android:Getting photo of contact from its number</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/11950405/take-contacts-display-pic-by-number?lq=1" class="question-hyperlink">take contacts display pic by number</a>
+</div>
+
+        </div>
+    </div>
+    <div class="module sidebar-related">
+        <h4 id="h-related">Related</h4>
+        <div class="related" data-tracker="rq=1">
+            <div class="spacer">
+<a href="http://stackoverflow.com/questions/3044545/get-contact-info-from-android-contact-picker?rq=1" class="question-hyperlink">get contact info from android contact picker</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3370628/retrieve-contact-phone-number-from-uri-in-android?rq=1" class="question-hyperlink">Retrieve Contact Phone Number From URI in Android</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3414464/looking-up-contact-from-phone-number-old-vs-new-uri-old-fails-new-succeeds?rq=1" class="question-hyperlink">Looking up Contact from phone number - Old vs New URI: Old fails, New Succeeds?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3433796/android-has-phone-number?rq=1" class="question-hyperlink">Android HAS_PHONE_NUMBER</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3609700/get-postal-address-from-a-contact-using-contactscontract-api-on-android?rq=1" class="question-hyperlink">Get Postal address from a contact using ContactsContract api on android</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3632298/access-to-contact-data?rq=1" class="question-hyperlink">access to contact data</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/3635426/update-insert-in-new-android-contacts-api?rq=1" class="question-hyperlink">Update/insert in new Android contacts API</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/4488121/insert-contacts-last-name-using-intent-android?rq=1" class="question-hyperlink">Insert contacts Last Name using Intent android</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/4613104/how-to-retrieve-contact-name-and-phone-number-in-android?rq=1" class="question-hyperlink">How to retrieve Contact name and phone number in Android</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/4863653/what-is-the-default-account-type-name-for-contacts-on-android-contact-applicat?rq=1" class="question-hyperlink">What is the default Account Type / Name for contacts on Android Contact Application?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/5112392/getting-contact-phone-number?rq=1" class="question-hyperlink">Getting Contact Phone Number</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/5551469/badparcelableexception-classnotfoundexception-when-getting-name-of-picked-conta?rq=1" class="question-hyperlink">BadParcelableException: ClassNotFoundException when getting name of picked contact</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6155612/getting-number-from-contacts-picker?rq=1" class="question-hyperlink">Getting Number from Contacts Picker</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6446267/android-set-contact-photo-with-contactscontract-insert-intent?rq=1" class="question-hyperlink">Android: set contact photo with ContactsContract insert intent</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/6587674/android-contacts-display-name-and-phone-numbers-in-single-database-query?rq=1" class="question-hyperlink">Android contacts Display Name and Phone Number(s) in single database query?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8042898/android-receive-contacts-changes-on-telephone?rq=1" class="question-hyperlink">Android - Receive Contacts changes on telephone</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8052975/get-the-contact-name-from-contacts-in-android?rq=1" class="question-hyperlink">get the contact name from contacts in android</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8186325/retrieving-android-contacts?rq=1" class="question-hyperlink">Retrieving Android Contacts</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8378347/android-add-contacts-in-1-5?rq=1" class="question-hyperlink">Android - Add contacts in 1.5</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8488149/adding-a-new-account-on-android-restricted-the-number-of-contact-fields?rq=1" class="question-hyperlink">Adding a new account on android restricted the number of contact fields</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/8717067/can-get-id-from-received-phone-number-but-not-group?rq=1" class="question-hyperlink">Can get ID from received phone number, but not group</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/9026121/add-event-for-contact-into-androids-contact-table?rq=1" class="question-hyperlink">Add event for contact into Android's contact table</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/9069368/update-raw-contact-in-android-when-you-have-only-the-contact-id?rq=1" class="question-hyperlink">Update raw contact in Android when you have only the contact id</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/10532161/how-to-show-detail-data-contact-by-click-name-in-listview-android?rq=1" class="question-hyperlink">how to show detail data contact by click name in listview android?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/questions/11679960/android-contacts-content-provider-inserting-data-into-wrong-columns-for-structur?rq=1" class="question-hyperlink">Android Contacts Content Provider inserting data into wrong columns for STRUCTURED_NAME</a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div id="feed-link">
+    <div id="feed-link-text"><a href="http://stackoverflow.com/feeds/question/3079365" title="feed of this question and its answers"><span class="feed-icon"></span>question feed</a></div>
+</div>
+<script type="text/javascript">
+StackExchange.ready(function(){$.get('/posts/3079365/ivc/b7f4');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/3079365/ivc/b7f4" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">default</div></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <a href="http://stackoverflow.com/about">about</a> |
+                <a href="http://stackoverflow.com/faq">faq</a> |
+                <a href="http://blog.stackexchange.com/?blb=1">blog</a> |
+                    <a href="http://chat.stackoverflow.com/">chat</a> |
+                <a href="http://data.stackexchange.com/">data</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> |
+                <a href="http://stackexchange.com/about/hiring">jobs</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+
+                <a onclick="StackExchange.switchMobile(&#39;on&#39;, &#39;/questions/3079365/android-retrieve-contact-name-from-phone-number&#39;)">mobile</a> |
+
+                <b><a href="http://stackoverflow.com/help">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                <div id="footer-sites">
+                    
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://stackoverflow.com/">stackoverflow.com</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://stackapps.com/">api/apps</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://careers.stackoverflow.com/">careers</a>&nbsp; 
+                        <span style="color:#E8272C;font-size:140%">■</span>&nbsp;<a href="http://serverfault.com/">serverfault.com</a>&nbsp; 
+                        <span style="color:#00AFEF;font-size:140%">■</span>&nbsp;<a href="http://superuser.com/">superuser.com</a>&nbsp; 
+                        <span style="color:#969696;font-size:140%">■</span>&nbsp;<a href="http://meta.stackoverflow.com/">meta</a>&nbsp; 
+                        <span style="color:#46937D;font-size:140%">■</span>&nbsp;<a href="http://area51.stackexchange.com/">area&nbsp;51</a>&nbsp; 
+                        <span style="color:#C0D0DC;font-size:140%">■</span>&nbsp;<a href="http://webapps.stackexchange.com/">webapps</a>&nbsp; 
+                        <span style="color:#000000;font-size:140%">■</span>&nbsp;<a href="http://gaming.stackexchange.com/">gaming</a>&nbsp; 
+                        <span style="color:#dd4814;font-size:140%">■</span>&nbsp;<a href="http://askubuntu.com/">ubuntu</a>&nbsp; 
+                        <span style="color:#9ce4fe;font-size:140%">■</span>&nbsp;<a href="http://webmasters.stackexchange.com/">webmasters</a>&nbsp; 
+                        <span style="color:#cf4d3f;font-size:140%">■</span>&nbsp;<a href="http://cooking.stackexchange.com/">cooking</a>&nbsp; 
+                        <span style="color:#f4f28d;font-size:140%">■</span>&nbsp;<a href="http://gamedev.stackexchange.com/">game development</a>&nbsp; 
+                        <span style="color:#0f3559;font-size:140%">■</span>&nbsp;<a href="http://math.stackexchange.com/">math</a>&nbsp; 
+                        <span style="color:#f2f2f2;font-size:140%">■</span>&nbsp;<a href="http://photo.stackexchange.com/">photography</a>&nbsp; 
+                        <span style="color:#037187;font-size:140%">■</span>&nbsp;<a href="http://stats.stackexchange.com/">stats</a>&nbsp; 
+                        <span style="color:#f1e7cc;font-size:140%">■</span>&nbsp;<a href="http://tex.stackexchange.com/">tex</a>&nbsp; 
+                        <span style="color:#e1cdae;font-size:140%">■</span>&nbsp;<a href="http://english.stackexchange.com/">english</a>&nbsp; 
+                        <span style="color:#a2d9f6;font-size:140%">■</span>&nbsp;<a href="http://cstheory.stackexchange.com/">theoretical cs</a>&nbsp; 
+                        <span style="color:#1b3e6c;font-size:140%">■</span>&nbsp;<a href="http://programmers.stackexchange.com/">programmers</a>&nbsp; 
+                        <span style="color:#293a5d;font-size:140%">■</span>&nbsp;<a href="http://unix.stackexchange.com/">unix</a>&nbsp;
+                        <span style="color:#bec0cb;font-size:140%">■</span>&nbsp;<a href="http://apple.stackexchange.com/">apple</a>&nbsp;
+                        <span style="color:#939185;font-size:140%">■</span>&nbsp;<a href="http://wordpress.stackexchange.com/">wordpress</a>&nbsp;
+                        <span style="color:#ebf5f5;font-size:140%">■</span>&nbsp;<a href="http://physics.stackexchange.com/">physics</a>&nbsp;
+                        <span style="color:#4176ab;font-size:140%">■</span>&nbsp;<a href="http://diy.stackexchange.com/">home&nbsp;improvement</a>&nbsp;
+                        <span style="color:#d1d8d7;font-size:140%">■</span>&nbsp;<a href="http://gis.stackexchange.com/">gis</a>&nbsp;
+                        <span style="color:#e5e2d3;font-size:140%">■</span>&nbsp;<a href="http://electronics.stackexchange.com/">electrical&nbsp;engineering</a>&nbsp;
+                        <span style="color:#a4c639;font-size:140%">■</span>&nbsp;<a href="http://android.stackexchange.com/">android</a>&nbsp;
+                        <span style="color:#2e4e60;font-size:140%">■</span>&nbsp;<a href="http://security.stackexchange.com/">security</a>&nbsp;
+                        <span style="color:#45bcb5;font-size:140%">■</span>&nbsp;<a href="http://bicycles.stackexchange.com/">bicycles</a>&nbsp;
+                        <span style="color:#00adee;font-size:140%">■</span>&nbsp;<a href="http://dba.stackexchange.com/">dba</a>&nbsp;
+                        <span style="color:#2edaf0;font-size:140%">■</span>&nbsp;<a href="http://drupal.stackexchange.com/">drupal</a>&nbsp;
+                        <span style="color:#213951;font-size:140%">■</span>&nbsp;<a href="http://sharepoint.stackexchange.com/">sharepoint</a>&nbsp;
+                        <span style="color:#73abb3;font-size:140%">■</span>&nbsp;<a href="http://scifi.stackexchange.com/">scifi &amp; fantasy</a>&nbsp;
+                        <span style="color:#23629F;font-size:140%">■</span>&nbsp;<a href="http://ux.stackexchange.com/">user experience</a>&nbsp;
+                        <span style="color:#faff72;font-size:140%">■</span>&nbsp;<a href="http://skeptics.stackexchange.com/">skeptics</a>&nbsp;
+                        <span style="color:#623121;font-size:140%">■</span>&nbsp;<a href="http://rpg.stackexchange.com/">rpg</a>&nbsp;
+                        <span style="color:#e4be88;font-size:140%">■</span>&nbsp;<a href="http://judaism.stackexchange.com/">judaism</a>&nbsp;
+                        <span style="color:#ffecb1;font-size:140%">■</span>&nbsp;<a href="http://mathematica.stackexchange.com/">mathematica</a>&nbsp;
+                </div>
+            </div>
+            <div id="footer-flair">
+                <a class="peer1" href="http://www.peer1.com/stackoverflow"></a>  
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2012.8.31.3891</div>
+                        </div>
+            <div id="copyright">
+                site design / logo © 2012 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|android|contacts|contactscontract|telephone|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script>
+    <script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>    
+    
+
+</body><span id="skype_highlighting_settings" display="none" autoextractnumbers="1"></span><object id="skype_plugin_object" location.href="http://stackoverflow.com/questions/3079365/android-retrieve-contact-name-from-phone-number" location.hostname="stackoverflow.com" style="position: absolute; visibility: hidden; left: -100px; top: -100px; " width="0" height="0" type="application/x-vnd.skype.click2call.chrome.5.7.0"></object></html>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+   
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+    
+    <TextView 
+       android:id="@+id/TextView0"
+       android:layout_width="200dp" 
+       android:layout_height="wrap_content" 
+       android:text="@string/name"
+    />
+
+    <EditText
+       android:id="@+id/name"
+       android:layout_below="@id/TextView0"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+    /> 
+
+    <TextView 
+       android:id="@+id/TextView00"
+       android:layout_below="@id/name"
+       android:layout_width="150dp" 
+       android:layout_height="wrap_content" 
+       android:text="@string/ipAdressText"
+    />
+
+    <EditText
+       android:id="@+id/ipadress"
+       android:layout_below="@id/TextView00"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+    />
+
+    <TextView 
+       android:id="@+id/TextView01"
+       android:layout_below="@id/name"
+       android:layout_toRightOf="@+id/TextView00"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:text="@string/portText"
+    />
+
+    <EditText
+       android:id="@+id/tcpport"
+       android:layout_below="@id/TextView01"
+       android:layout_toRightOf="@+id/ipadress"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:inputType="number"
+    />
+
+    <TextView 
+       android:id="@+id/TextView02"
+       android:layout_below="@+id/ipadress"
+       android:layout_width="150dp" 
+       android:layout_height="wrap_content" 
+       android:text="@string/loginText"
+    />
+
+    <EditText
+       android:id="@+id/textlogin"
+       android:layout_below="@id/TextView02"
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+    />
+
+    <TextView 
+       android:id="@+id/TextView03"
+       android:layout_below="@+id/tcpport"
+       android:layout_toRightOf="@+id/TextView02"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:text="@string/pwText"
+    />
+
+    <EditText
+       android:id="@+id/pw"
+       android:layout_below="@id/TextView03"
+       android:layout_toRightOf="@+id/textlogin"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:inputType="textPassword"
+    />
+
+    <TextView 
+       android:id="@+id/TextView04"
+       android:layout_below="@id/pw"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:text="@string/identityDisplay"
+    />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/groupradio"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@id/TextView04">
+       <RadioButton android:id="@+id/radio_yes"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/yesradio"
+       />
+       <RadioButton android:id="@+id/radio_no"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/noradio"
+       />
+    </RadioGroup>
+
+    <TextView 
+       android:id="@+id/TextView05"
+       android:layout_below="@+id/groupradio"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content" 
+       android:text="@string/osType"
+    />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/groupradioos"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@+id/TextView05">
+       <RadioButton android:id="@+id/radio_e1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/e1"
+       />
+       <RadioButton android:id="@+id/radio_e2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/e2"
+       />
+    </RadioGroup>
+    <Button 
+    android:id="@+id/Button00" 
+    android:layout_below="@+id/groupradioos"
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content"
+    android:text="@string/settingsSaveButton"
+ />
+ 
+ <Button 
+    android:id="@+id/Button01" 
+    android:layout_below="@+id/groupradioos"
+    android:layout_toRightOf="@+id/Button00" 
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content"
+    android:text="@string/settingsCancelButton"
+ />
+ 
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
