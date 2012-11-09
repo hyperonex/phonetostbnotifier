@@ -32,10 +32,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-/**
- *
- * @author Achraf Gazdar
- */
 public class toSTBnotifierService extends Service{
     private static final String TAG = toSTBnotifierService.class.getSimpleName();
     private String settingsFileName = "phonetostb.cfg";

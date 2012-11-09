@@ -9,10 +9,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-/**
- *
- * @author root
- */
 public class stopApplicationReceiver extends BroadcastReceiver {
     private toSTBnotifierService notifierService; 
 

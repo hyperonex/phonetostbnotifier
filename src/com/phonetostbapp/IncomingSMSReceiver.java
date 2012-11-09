@@ -10,10 +10,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
 
-/**
- *
- * @author Achraf Gazdar
- */
 public class IncomingSMSReceiver extends BroadcastReceiver {
     private toSTBnotifierService notifierService; 
 
