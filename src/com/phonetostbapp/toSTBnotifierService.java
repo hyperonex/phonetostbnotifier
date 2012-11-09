@@ -34,7 +34,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 public class toSTBnotifierService extends Service{
     private static final String TAG = toSTBnotifierService.class.getSimpleName();
-    private String settingsFileName = "phonetostb.cfg";
     private FileInputStream inSettings;
     private String name="";
     private String ipAdress="";
