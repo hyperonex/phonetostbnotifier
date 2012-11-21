@@ -1,4 +1,4 @@
 - Add a calender event notification
 - Internationalization
-- Implement the same application iphone and windows mobile phones
+- Implement the same application iOS and windows mobile phones
 -...
