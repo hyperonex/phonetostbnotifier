@@ -1,7 +1,8 @@
-This application notifies on your TV screen that your phone is ringing and that you received a message.
-to compile your self the code : 
-1-Clone the application repository
-git clone https://github.com/hyperonex/phonetostbnotifier.git
+This application notifies on your TV screen that your phone is ringing or that you received a message.
+
+To compile your self the code : 
+1-Clone the application repository :
+	git clone https://github.com/hyperonex/phonetostbnotifier.git
 2-Install the Android SDK
 3-Add the Android Plugin to your Netbeans IDE
 4-From the File/Open Project... menu select the folder phonetostbnotifier where you cloned the code
@@ -15,5 +16,5 @@ git clone https://github.com/hyperonex/phonetostbnotifier.git
     f- fill the settings field
     g- click Save
     h- click again on the menu button of phone (emulator) -> Run
-    i- call your phone (send an sms) (emulator) from the ddms application that you find in android-sdk/tools
+    i- call your phone (or send an sms) (to call the emulator use the ddms application that you find in android-sdk/tools)
     
