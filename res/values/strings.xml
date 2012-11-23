@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PhoneToSTBNotifier</string>
+    <string name="app_name">Phone To STB Notifier</string>
     <string name="settingsOption">Settings...</string>
     <string name="runOption">Run(Settings first)</string>
     <string name="exitOption">Stop Running</string>
