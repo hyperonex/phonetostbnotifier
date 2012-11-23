@@ -1,5 +1,6 @@
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/AndroidToSTBNotifier.ap_ \
  : /home/achraf/Developpement/PhoneToSTBNotifier/res/values/strings.xml \
+/home/achraf/Developpement/PhoneToSTBNotifier/res/values-ar/strings.xml \
 /home/achraf/Developpement/PhoneToSTBNotifier/res/drawable/drawable-hdpi \
 /home/achraf/Developpement/PhoneToSTBNotifier/res/drawable/drawable-xxhdpi \
 /home/achraf/Developpement/PhoneToSTBNotifier/res/drawable/drawable-xhdpi \
@@ -17,6 +18,7 @@
 /home/achraf/Developpement/PhoneToSTBNotifier/res/layout/settingsdialog.xml \
 /home/achraf/Developpement/PhoneToSTBNotifier/res/layout/aboutdialog.xml \
 /home/achraf/Developpement/PhoneToSTBNotifier/res/layout/main.xml \
+/home/achraf/Developpement/PhoneToSTBNotifier/res/values-fr/strings.xml \
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/res/drawable/drawable-hdpi \
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/res/drawable/drawable-xxhdpi \
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/res/drawable/drawable-xhdpi \

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Phone To STB Notifier</string>
+    <string name="settingsOption">Settings...</string>
+    <string name="runOption">Run(Settings first)</string>
+    <string name="exitOption">Stop Running</string>
+    <string name="aboutOption">About...</string>
+    <string name="name">First Name</string>
+    <string name="ipAdressText">IP Adress</string>
+    <string name="portText">Port</string>
+    <string name="loginText">STB login</string>
+    <string name="pwText">STB password</string>
+    <string name="identityDisplay">Dispaly the caller name</string>
+    <string name="yesradio">Yes</string>
+    <string name="noradio">No</string>
+    <string name="osType">STB OS Type</string>
+    <string name="e1">Enigma 1</string>
+    <string name="e2">Enigma 2</string>
+    <string name="settingsSaveButton">Save</string>
+    <string name="settingsCancelButton">Cancel</string>
+    <string name="closeDialogTitle">Closing Phone to STB Notifier</string>
+    <string name="closeDialogMSG">Are you sure you want to close this activity?</string>
+</resources>
