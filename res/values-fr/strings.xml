@@ -19,9 +19,9 @@
     <string name="e2">Enigma 2</string>
     <string name="settingsSaveButton">Enregistrer</string>
     <string name="settingsCancelButton">Annuler</string>
-    <string name="callMessage">, Votre téléphone sonne</string>
-    <string name="callMessageSuffix">. Appel de </string>
-    <string name="smsMessage">, Vous avez un message</string>
+    <string name="callMessage">, votre téléphone sonne.</string>
+    <string name="callMessageSuffix"> Appel de </string>
+    <string name="smsMessage">, vous avez un message</string>
     <string name="smsMessageSuffix"> de </string>
     <string name="aboutDialogTitle">A propos de Phone To STB Notifier</string>
     <string name="closingDialogTitle">Fermer Phone to STB Notifier</string>

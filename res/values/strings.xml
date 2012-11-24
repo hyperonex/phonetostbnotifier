@@ -19,8 +19,8 @@
     <string name="e2">Enigma 2</string>
     <string name="settingsSaveButton">Save</string>
     <string name="settingsCancelButton">Cancel</string>
-    <string name="callMessage">, your phone is ringing</string>
-    <string name="callMessageSuffix">. Call from </string>
+    <string name="callMessage">, your phone is ringing.</string>
+    <string name="callMessageSuffix"> Call from </string>
     <string name="smsMessage">, you have a message</string>
     <string name="smsMessageSuffix"> from </string>
     <string name="aboutDialogTitle">About Phone To STB Notifier</string>
