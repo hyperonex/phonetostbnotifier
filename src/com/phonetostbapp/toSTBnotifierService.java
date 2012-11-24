@@ -42,6 +42,10 @@ public class toSTBnotifierService extends Service{
     private String pw="";
     private Boolean displayCallerName=false;
     private Boolean isEnigmaOne=true;
+    private String callMessage="";
+    private String callMessageSuffix="";
+    private String smsMessage="";
+    private String smsMessageSuffix="";
     //**************Phonelistener*******************//
     
     public class MyPhoneListener extends PhoneStateListener
@@ -108,6 +112,10 @@ public class toSTBnotifierService extends Service{
         try {
             
             SharedPreferences myPrefs = getSharedPreferences("myPrefs", 4);
+            
+            this.callMessage=myPrefs.getString("callMessage", "");
+            this.callMessageSuffix=myPrefs.getString("callMessageSuffix", "");
+            
             this.ipAdress=myPrefs.getString("IP", "");
             this.name=myPrefs.getString("NAME", "");
             this.port=myPrefs.getString("PORT", "");
@@ -131,7 +139,7 @@ public class toSTBnotifierService extends Service{
                 STBuri = "http://"/*+login.trim()+":"+pw.trim()+"@"*/+ipAdress.trim()+":"+port.trim()+"/web/message?text=";
             
             
-            String messageToDisplay=URLEncoder.encode(name+", your phone is ringing");
+            String messageToDisplay=URLEncoder.encode(name+callMessage);
             
             String callerName = "";
            
@@ -147,7 +155,7 @@ public class toSTBnotifierService extends Service{
                 if (callerName.equals(""))
                         callerName+=incomingNumber;
               
-               messageToDisplay+=URLEncoder.encode(". Call from "+callerName);
+               messageToDisplay+=URLEncoder.encode(/*". Call from "*/callMessageSuffix+callerName);
                
             }
             
@@ -200,6 +208,8 @@ public class toSTBnotifierService extends Service{
             this.port=myPrefs.getString("PORT", "");
             this.login=myPrefs.getString("LOGIN", "");
             this.pw=myPrefs.getString("PW", "");
+            this.smsMessage=myPrefs.getString("smsMessage", "");
+            this.smsMessageSuffix=myPrefs.getString("smsMessageSuffix", "");
             if(myPrefs.getString("IDDISPLAY", "").equals("yes"))
                   this.displayCallerName=true;
             else
@@ -217,7 +227,7 @@ public class toSTBnotifierService extends Service{
             else
                 STBuri = "http://"/*+login.trim()+":"+pw.trim()+"@"*/+ipAdress.trim()+":"+port.trim()+"/web/message?text=";
             
-            String messageToDisplay=URLEncoder.encode(name+", you have a message");
+            String messageToDisplay=URLEncoder.encode(name+smsMessage/*", you have a message"*/);
             String callerName = "";
            
             if (displayCallerName){
@@ -232,7 +242,7 @@ public class toSTBnotifierService extends Service{
                 if (callerName.equals(""))
                         callerName+=incomingNumber;
               
-               messageToDisplay+=URLEncoder.encode(" from "+callerName);
+               messageToDisplay+=URLEncoder.encode(/*" from "*/smsMessageSuffix+callerName);
             }
             
             HttpClient client = new DefaultHttpClient();

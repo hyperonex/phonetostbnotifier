@@ -1,23 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Phone To STB Notifier</string>
-    <string name="settingsOption">Settings...</string>
-    <string name="runOption">Run(Settings first)</string>
-    <string name="exitOption">Stop Running</string>
-    <string name="aboutOption">About...</string>
-    <string name="name">First Name</string>
-    <string name="ipAdressText">IP Adress</string>
-    <string name="portText">Port</string>
-    <string name="loginText">STB login</string>
-    <string name="pwText">STB password</string>
-    <string name="identityDisplay">Dispaly the caller name</string>
-    <string name="yesradio">Yes</string>
-    <string name="noradio">No</string>
-    <string name="osType">STB OS Type</string>
-    <string name="e1">Enigma 1</string>
-    <string name="e2">Enigma 2</string>
-    <string name="settingsSaveButton">Save</string>
-    <string name="settingsCancelButton">Cancel</string>
-    <string name="closeDialogTitle">Closing Phone to STB Notifier</string>
-    <string name="closeDialogMSG">Are you sure you want to close this activity?</string>
+    <string name="settingsOption">إعدادات...</string>
+    <string name="settingsDialogTitle">إعدادات</string>
+    <string name="runOption">تشغيل</string>
+    <string name="exitOption">إيقاف</string>
+    <string name="aboutOption">حول...</string>
+    <string name="name">الإسم</string>
+    <string name="ipAdressText">الآيب آدرس</string>
+    <string name="portText">البورت</string>
+    <string name="loginText">اسم مستخدم الجهاز</string>
+    <string name="pwText">كلمة سر الجهاز</string>
+    <string name="identityDisplay">إضهار اسم المتصل</string>
+    <string name="yesradio">نعم</string>
+    <string name="noradio">لا</string>
+    <string name="osType">نظام التشغيل</string>
+    <string name="e1">1إينيقما</string>
+    <string name="e2">2إينيقما</string>
+    <string name="settingsSaveButton">حفظ</string>
+    <string name="settingsCancelButton">إلغاء</string>
+    <string name="callMessage"> هاتفك يرن </string>
+    <string name="callMessageSuffix"> إتصال من </string>
+    <string name="smsMessage"> عندك رسالة </string>
+    <string name="smsMessageSuffix"> من </string>
+    <string name="aboutDialogTitle">حول Phone To STB Notifier </string>
+    <string name="closingDialogTitle">غلق Phone to STB Notifier </string>
+    <string name="closingDialogMessage">هل أنت متأكد ؟</string>
 </resources>

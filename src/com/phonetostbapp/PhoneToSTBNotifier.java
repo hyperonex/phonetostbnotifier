@@ -103,9 +103,9 @@ public class PhoneToSTBNotifier extends Activity
     		//close the Activity
             new AlertDialog.Builder(this)
                 .setIcon(android.R.drawable.ic_dialog_alert)
-                .setTitle("Closing Phone to STB Notifier")
-                .setMessage("Are you sure you want to close this application?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener()
+                .setTitle(getResources().getString(R.string.closingDialogTitle))
+                .setMessage(getResources().getString(R.string.closingDialogMessage))
+                .setPositiveButton(getResources().getString(R.string.yesradio), new DialogInterface.OnClickListener()
                     {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -116,7 +116,7 @@ public class PhoneToSTBNotifier extends Activity
                         }
 
                     })
-                .setNegativeButton("No", null)
+                .setNegativeButton(getResources().getString(R.string.noradio), null)
                 .show();
                 
     		return true;
@@ -129,7 +129,7 @@ public class PhoneToSTBNotifier extends Activity
         if(item.getItemId() == ID_MENU_ABOUT)
         {
             aboutDialog about = new aboutDialog(this); 
-            about.setTitle("About PhoneToSTBNotifier");
+            about.setTitle(getResources().getString(R.string.aboutDialogTitle));
             about.show();
             return true;            
         }
@@ -144,7 +144,7 @@ public class PhoneToSTBNotifier extends Activity
     private void showSettingsDialog(){
         settingsDialog = new Dialog(PhoneToSTBNotifier.this);
         settingsDialog.setContentView(R.layout.settingsdialog);
-        settingsDialog.setTitle("Settings");
+        settingsDialog.setTitle(getResources().getString(R.string.settingsDialogTitle));
         settingsDialog.setCancelable(true);
         
         EditText nameText = (EditText)settingsDialog.findViewById(R.id.name);
@@ -234,6 +234,11 @@ public class PhoneToSTBNotifier extends Activity
                     SharedPreferences.Editor prefsEditor = mySettings.edit();
                     
                     prefsEditor.clear();
+                    
+                    prefsEditor.putString("callMessage",getResources().getString(R.string.callMessage));
+                    prefsEditor.putString("callMessageSuffix",getResources().getString(R.string.callMessageSuffix));
+                    prefsEditor.putString("smsMessage",getResources().getString(R.string.smsMessage));
+                    prefsEditor.putString("smsMessageSuffix",getResources().getString(R.string.smsMessageSuffix));
                     
                     EditText nameText = (EditText)settingsDialog.findViewById(R.id.name);
                     prefsEditor.putString("NAME", nameText.getText().toString());

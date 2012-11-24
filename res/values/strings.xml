@@ -2,11 +2,12 @@
 <resources>
     <string name="app_name">Phone To STB Notifier</string>
     <string name="settingsOption">Settings...</string>
+    <string name="settingsDialogTitle">Settings</string>
     <string name="runOption">Run(Settings first)</string>
     <string name="exitOption">Stop Running</string>
     <string name="aboutOption">About...</string>
     <string name="name">First Name</string>
-    <string name="ipAdressText">IP Adress</string>
+    <string name="ipAdressText">IP Address</string>
     <string name="portText">Port</string>
     <string name="loginText">STB login</string>
     <string name="pwText">STB password</string>
@@ -18,6 +19,12 @@
     <string name="e2">Enigma 2</string>
     <string name="settingsSaveButton">Save</string>
     <string name="settingsCancelButton">Cancel</string>
-    <string name="closeDialogTitle">Closing Phone to STB Notifier</string>
-    <string name="closeDialogMSG">Are you sure you want to close this activity?</string>
+    <string name="callMessage">, your phone is ringing</string>
+    <string name="callMessageSuffix">. Call from </string>
+    <string name="smsMessage">, you have a message</string>
+    <string name="smsMessageSuffix"> from </string>
+    <string name="aboutDialogTitle">About Phone To STB Notifier</string>
+    <string name="closingDialogTitle">Closing Phone to STB Notifier</string>
+    <string name="closingDialogMessage">Are you sure you want to close this application?</string>
+    
 </resources>
