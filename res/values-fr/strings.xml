@@ -3,7 +3,7 @@
     <string name="app_name">Phone To STB Notifier</string>
     <string name="settingsOption">Options...</string>
     <string name="settingsDialogTitle">Options</string>
-    <string name="runOption">Executer</string>
+    <string name="runOption">Exécuter</string>
     <string name="exitOption">Stop</string>
     <string name="aboutOption">A propos...</string>
     <string name="name">Prénom</string>
@@ -26,4 +26,5 @@
     <string name="aboutDialogTitle">A propos de Phone To STB Notifier</string>
     <string name="closingDialogTitle">Fermer Phone to STB Notifier</string>
     <string name="closingDialogMessage">Êtes-vous sûr ?</string>
+    <string name="mainMessage">Prière de bien vouloir préciser vos options avant le démarrage de l\'application</string>
 </resources>

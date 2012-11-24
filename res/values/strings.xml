@@ -26,5 +26,6 @@
     <string name="aboutDialogTitle">About Phone To STB Notifier</string>
     <string name="closingDialogTitle">Closing Phone to STB Notifier</string>
     <string name="closingDialogMessage">Are you sure you want to close this application?</string>
+    <string name="mainMessage">Please proceed to Settings menu before Run menu</string>
     
 </resources>

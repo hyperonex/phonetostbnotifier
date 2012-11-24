@@ -8,7 +8,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 <TextView android:id="@+id/TextView01"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:text="Please use the menu button to display the config dialog box">
+android:text="@string/mainMessage">
 </TextView>
  
  

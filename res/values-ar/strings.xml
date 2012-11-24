@@ -26,4 +26,5 @@
     <string name="aboutDialogTitle">حول Phone To STB Notifier </string>
     <string name="closingDialogTitle">غلق Phone to STB Notifier </string>
     <string name="closingDialogMessage">هل أنت متأكد ؟</string>
+    <string name="mainMessage">الرجاء القيام بالإعدادات قبل التشغيل</string>
 </resources>

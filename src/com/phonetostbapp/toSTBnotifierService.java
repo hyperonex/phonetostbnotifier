@@ -155,7 +155,7 @@ public class toSTBnotifierService extends Service{
                 if (callerName.equals(""))
                         callerName+=incomingNumber;
               
-               messageToDisplay+=URLEncoder.encode(/*". Call from "*/callMessageSuffix+callerName);
+               messageToDisplay+=URLEncoder.encode(/*". Call from "*/" "+callMessageSuffix+" "+callerName);
                
             }
             
@@ -242,7 +242,7 @@ public class toSTBnotifierService extends Service{
                 if (callerName.equals(""))
                         callerName+=incomingNumber;
               
-               messageToDisplay+=URLEncoder.encode(/*" from "*/smsMessageSuffix+callerName);
+               messageToDisplay+=URLEncoder.encode(/*" from "*/" "+smsMessageSuffix+" "+callerName);
             }
             
             HttpClient client = new DefaultHttpClient();

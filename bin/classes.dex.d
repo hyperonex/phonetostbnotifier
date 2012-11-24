@@ -22,4 +22,4 @@
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/classes/com/phonetostbapp/R$string.class \
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/classes/com/phonetostbapp/toSTBnotifierService$MyPhoneListener.class \
 /home/achraf/Developpement/PhoneToSTBNotifier/bin/classes/com/phonetostbapp/PhoneToSTBNotifier$2.class \
-/home/achraf/Developpement/android-sdk-linux/tools/support/annotations.jar \
+/home/achraf/Developpement/PhoneToSTBNotifier/bin/dexedLibs/annotations-f4a16ee3f56ad762fcf48a28036860c7.jar \
